@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SceneEdge
   layers:
   - Default
   - TransparentFX
@@ -11,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
   - 
+  - Obj
   - 
   - 
   - 
@@ -38,9 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Ground
-    uniqueID: 3341776285
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackLayer
+    uniqueID: 1788843339
+    locked: 0
+  - name: MiddleLayer
+    uniqueID: 1577233143
+    locked: 0
+  - name: FrontLayer
+    uniqueID: 3581093109
     locked: 0

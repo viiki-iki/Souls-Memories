@@ -1,0 +1,2387 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.36f1 (95a4219250e5) revision 9806881'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 16126 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/vitoria.fiorin/Documents/GitHub/Souls-Memories
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+63529
+Successfully changed project path to: C:/Users/vitoria.fiorin/Documents/GitHub/Souls-Memories
+C:/Users/vitoria.fiorin/Documents/GitHub/Souls-Memories
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22584] Host "[IP] 192.168.0.248 [Port] 0 [Flags] 2 [Guid] 732932735 [EditorId] 732932735 [Version] 1048832 [Id] WindowsEditor(7,CTNDELL15FWVM3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22584] Host "[IP] 192.168.0.248 [Port] 0 [Flags] 2 [Guid] 732932735 [EditorId] 732932735 [Version] 1048832 [Id] WindowsEditor(7,CTNDELL15FWVM3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 21.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.36f1 (95a4219250e5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/vitoria.fiorin/Documents/GitHub/Souls-Memories/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     6010 MB
+    Driver:   31.0.15.4680
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007149 seconds.
+- Loaded All Assemblies, in  0.317 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.229 seconds
+Domain Reload Profiling: 545ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (101ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (229ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (178ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.607 seconds
+Refreshing native plugins compatible for Editor in 7.37 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.714 seconds
+Domain Reload Profiling: 1318ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (323ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (111ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (714ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (567ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (459ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 15.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4687 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 72 unused Assets / (63.8 KB). Loaded Objects now: 5148.
+Memory consumption went from 155.4 MB to 155.3 MB.
+Total: 4.178700 ms (FindLiveObjects: 0.338500 ms CreateObjectMapping: 0.150700 ms MarkObjects: 3.501900 ms  DeleteObjects: 0.186200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.580 seconds
+Refreshing native plugins compatible for Editor in 7.30 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.368 seconds
+Domain Reload Profiling: 1945ms
+	BeginReloadAssembly (194ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (295ms)
+		LoadAssemblies (364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1368ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (516ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (409ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 7.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4676 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5153.
+Memory consumption went from 152.6 MB to 152.5 MB.
+Total: 4.168300 ms (FindLiveObjects: 0.382000 ms CreateObjectMapping: 0.154800 ms MarkObjects: 3.560900 ms  DeleteObjects: 0.069300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.552 seconds
+Refreshing native plugins compatible for Editor in 7.72 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.360 seconds
+Domain Reload Profiling: 1909ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (312ms)
+		LoadAssemblies (363ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1360ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (506ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (399ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 7.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (46.7 KB). Loaded Objects now: 5137.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.627100 ms (FindLiveObjects: 0.282300 ms CreateObjectMapping: 0.118500 ms MarkObjects: 3.139600 ms  DeleteObjects: 0.085500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.528 seconds
+Refreshing native plugins compatible for Editor in 8.43 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.387 seconds
+Domain Reload Profiling: 1912ms
+	BeginReloadAssembly (182ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (331ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1387ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (557ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (435ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 8.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5141.
+Memory consumption went from 151.9 MB to 151.8 MB.
+Total: 4.590600 ms (FindLiveObjects: 0.313500 ms CreateObjectMapping: 0.134600 ms MarkObjects: 4.049400 ms  DeleteObjects: 0.091800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.592 seconds
+Refreshing native plugins compatible for Editor in 10.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.539 seconds
+Domain Reload Profiling: 2125ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (305ms)
+		LoadAssemblies (386ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1539ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (613ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (486ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 8.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5145.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.327200 ms (FindLiveObjects: 0.290900 ms CreateObjectMapping: 0.121400 ms MarkObjects: 2.857300 ms  DeleteObjects: 0.056500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.443 seconds
+Refreshing native plugins compatible for Editor in 7.87 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.480 seconds
+Domain Reload Profiling: 1920ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (233ms)
+		LoadAssemblies (293ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1480ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (584ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (460ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 8.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.4 KB). Loaded Objects now: 5149.
+Memory consumption went from 151.8 MB to 151.8 MB.
+Total: 3.191200 ms (FindLiveObjects: 0.305200 ms CreateObjectMapping: 0.132800 ms MarkObjects: 2.691100 ms  DeleteObjects: 0.061000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.447 seconds
+Refreshing native plugins compatible for Editor in 7.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.481 seconds
+Domain Reload Profiling: 1926ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (230ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1482ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (589ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (469ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 8.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5153.
+Memory consumption went from 151.8 MB to 151.8 MB.
+Total: 3.124200 ms (FindLiveObjects: 0.295100 ms CreateObjectMapping: 0.154600 ms MarkObjects: 2.616700 ms  DeleteObjects: 0.056800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Import Request.
+  Time since last request: 522931.806917 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8aa6d6257bee9dba1b26685efcae14e7') in 0.009426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.514 seconds
+Refreshing native plugins compatible for Editor in 9.50 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.386 seconds
+Domain Reload Profiling: 1897ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (282ms)
+		LoadAssemblies (327ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (39ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1386ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (512ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (407ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 7.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4642 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5158.
+Memory consumption went from 151.6 MB to 151.6 MB.
+Total: 4.626100 ms (FindLiveObjects: 0.428100 ms CreateObjectMapping: 0.168700 ms MarkObjects: 3.958500 ms  DeleteObjects: 0.069500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.472 seconds
+Refreshing native plugins compatible for Editor in 7.70 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.455 seconds
+Domain Reload Profiling: 1924ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (240ms)
+		LoadAssemblies (313ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1455ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (584ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (462ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 10.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5162.
+Memory consumption went from 151.9 MB to 151.8 MB.
+Total: 4.108000 ms (FindLiveObjects: 0.392900 ms CreateObjectMapping: 0.214000 ms MarkObjects: 3.435200 ms  DeleteObjects: 0.064800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.463 seconds
+Refreshing native plugins compatible for Editor in 8.76 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.473 seconds
+Domain Reload Profiling: 1933ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (243ms)
+		LoadAssemblies (310ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (582ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (454ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 8.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5166.
+Memory consumption went from 151.9 MB to 151.8 MB.
+Total: 3.234100 ms (FindLiveObjects: 0.352100 ms CreateObjectMapping: 0.134200 ms MarkObjects: 2.684500 ms  DeleteObjects: 0.062100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.577 seconds
+Refreshing native plugins compatible for Editor in 8.96 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.529 seconds
+Domain Reload Profiling: 2102ms
+	BeginReloadAssembly (209ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (294ms)
+		LoadAssemblies (353ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (36ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1530ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (583ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (460ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 8.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (37.4 KB). Loaded Objects now: 5170.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.686300 ms (FindLiveObjects: 0.315200 ms CreateObjectMapping: 0.154300 ms MarkObjects: 3.140300 ms  DeleteObjects: 0.075200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.453 seconds
+Refreshing native plugins compatible for Editor in 7.86 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.491 seconds
+Domain Reload Profiling: 1941ms
+	BeginReloadAssembly (151ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (236ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1491ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (602ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (482ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 8.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5174.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.571300 ms (FindLiveObjects: 0.329100 ms CreateObjectMapping: 0.148400 ms MarkObjects: 3.028700 ms  DeleteObjects: 0.063800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.472 seconds
+Refreshing native plugins compatible for Editor in 7.99 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.483 seconds
+Domain Reload Profiling: 1952ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (315ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1484ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (589ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (466ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 9.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5178.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.650400 ms (FindLiveObjects: 0.323700 ms CreateObjectMapping: 0.159700 ms MarkObjects: 3.096900 ms  DeleteObjects: 0.069100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.461 seconds
+Refreshing native plugins compatible for Editor in 7.29 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.461 seconds
+Domain Reload Profiling: 1920ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (229ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1462ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (567ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (451ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 9.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5182.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.201800 ms (FindLiveObjects: 0.322600 ms CreateObjectMapping: 0.143800 ms MarkObjects: 2.677500 ms  DeleteObjects: 0.056800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.456 seconds
+Refreshing native plugins compatible for Editor in 7.38 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.457 seconds
+Domain Reload Profiling: 1910ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (225ms)
+		LoadAssemblies (288ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1458ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (584ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (461ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 8.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.4 KB). Loaded Objects now: 5186.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.287500 ms (FindLiveObjects: 0.312800 ms CreateObjectMapping: 0.162800 ms MarkObjects: 2.752000 ms  DeleteObjects: 0.058000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.485 seconds
+Refreshing native plugins compatible for Editor in 10.81 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.503 seconds
+Domain Reload Profiling: 1986ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (319ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1504ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (580ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (461ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 8.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5190.
+Memory consumption went from 151.9 MB to 151.9 MB.
+Total: 3.351500 ms (FindLiveObjects: 0.374300 ms CreateObjectMapping: 0.136300 ms MarkObjects: 2.782000 ms  DeleteObjects: 0.057800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Import Request.
+  Time since last request: 3687.125371 seconds.
+  path: Assets/Environment/Scene1/New Material.mat
+  artifactKey: Guid(525b28aab52e9c9409a5be421acec72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/New Material.mat using Guid(525b28aab52e9c9409a5be421acec72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd36f7254475c5a97d802e7a215177f56') in 0.275708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 47.886197 seconds.
+  path: Assets/Environment/Scene1/New Physic Material.physicMaterial
+  artifactKey: Guid(4fce4b0b975972047b2924e3c486c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/New Physic Material.physicMaterial using Guid(4fce4b0b975972047b2924e3c486c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a6948df9d4b3f59a8f4f5f1a95a7566c') in 0.001519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 46.974676 seconds.
+  path: Assets/Environment/Scene1/New Physics Material 2D.physicsMaterial2D
+  artifactKey: Guid(2baf4308c8356dd4d900a33ac2f82f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/New Physics Material 2D.physicsMaterial2D using Guid(2baf4308c8356dd4d900a33ac2f82f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e2d2aff7465515be408f4326b95accf3') in 0.001636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.470 seconds
+Refreshing native plugins compatible for Editor in 8.94 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.472 seconds
+Domain Reload Profiling: 1939ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (240ms)
+		LoadAssemblies (303ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (583ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (461ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 8.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4642 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5234.
+Memory consumption went from 156.1 MB to 156.1 MB.
+Total: 3.325400 ms (FindLiveObjects: 0.346500 ms CreateObjectMapping: 0.143100 ms MarkObjects: 2.769300 ms  DeleteObjects: 0.065300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.464 seconds
+Refreshing native plugins compatible for Editor in 7.77 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.488 seconds
+Domain Reload Profiling: 1949ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (242ms)
+		LoadAssemblies (306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1489ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (578ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (459ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 9.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.4 KB). Loaded Objects now: 5238.
+Memory consumption went from 156.4 MB to 156.4 MB.
+Total: 3.117500 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.119600 ms MarkObjects: 2.648800 ms  DeleteObjects: 0.057000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.477 seconds
+Refreshing native plugins compatible for Editor in 7.44 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.483 seconds
+Domain Reload Profiling: 1956ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (312ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1483ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (576ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (456ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 9.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.3 KB). Loaded Objects now: 5242.
+Memory consumption went from 156.4 MB to 156.4 MB.
+Total: 3.226600 ms (FindLiveObjects: 0.304100 ms CreateObjectMapping: 0.130200 ms MarkObjects: 2.733700 ms  DeleteObjects: 0.057800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: bae6a604140e0a250291b1e16f121d39 -> 1cd02bcdec9d22fff74c99422329f637
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: d5b671c57e220f8f5762329e8441492a -> 9ff23c1c3f57fe2d5f4522b7b3750d5d
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: eb1e8c53a7e9fa9677eadf6a2b0d0a06 -> 4fc9bf049e642c22bb70a10bd6141854
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: e94d5e8039b3059958b75f580b01d92d -> f2880cc340f13915f85c8de1a56c5b36
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: a1b0cf70c1da74460326656e8af5710e -> 16926265ae8f26d5a2700ab22c013dd0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 1bb5710bc0b8cb78f6ea6e863ff10151 -> 023c45f2678f00c203841e99e3be64cc
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 28a80e29014a346fdfbf9fcfab242363 -> c36fbfafc49fa17941fd91bcea1fc8aa
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: ef9ad2377268615344096e75083c8362 -> 25a2fc54d6daa18dc264d5d4cee75246
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: a960d8aef00a04f930ad74c43578b644 -> 6de205457008ed0fb4e3092b0c3c5865
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 7307fcc2cdb055f6532e38774a569a65 -> 520a1130381647e06575ec6ac4473f2b
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: b189535c1f7ae24f8ff86af86691b79b -> 2129d1e3360abae92b79358f48c31e11
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: c8686175e50db42ddb3dadad334fb8b8 -> 0ce026f1094606c8a54952ab73721471
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: 4dab8ca82153c6fae527f96a4137d36c -> b7e0ba2599756384eb5c465d845f955e
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: 865173d6911e851991cb5b638a3589e6 -> 862431bad16f34c4c67f6b9b39eb0ef7
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: f303dfc2fa379d2f76dff3275ada8ee3 -> 07f56655059b4b41c3dd29ef40cb7f73
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: d0c4943f6298d2764a3d0468364be257 -> 49490928a6c11ad8d1633fb545822618
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: 084a42508d745f3aea9118f293a84b4e -> 27a612e605519f2563b5eebb8ecf2c15
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: ad03a8a61dfc41a66a94a2031b0902b1 -> 08c148f5182ce13ca868880b0ccc03b9
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: 10105a06fe75ca7e8c402c767365445e -> 6d7f164db587b9d55ca8274fbe918c8a
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 05117f7ed360a6cb94be5b626b2a83e3 -> ad87b628ef97add4b69a6c7ee7f415df
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: bb9f7096d86c26999605ddd07da0513c -> c3bca549cfe734d766ea29e1c1865842
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: a49d48d3da4f389d3d1a63af99f44908 -> d3b8c2725a9cd9e98a701a88e05c8b47
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: dcda929b7780c21ac4b7986e5b81b03d -> 29063b94aa7055363356a6e20c087fb4
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1d25637805cceca39c048fed8663e586 -> b5ed6c198f25e32663e8eb90cc749880
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: 3f17e74c0294932c496e8f34e2c56725 -> e14e05ace48bbb07a523202228054a2d
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: a685572eefa107e06fdce282e5fb0769 -> 73a24493fd3383cfe13e4b704142b0a3
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: da2d6722b2568d4ce7ce71915ecf589b -> 866bbdb2fb2e2b9168f317739e51c882
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 12b2423c8d5c77669ffc7dc24bbe64b0 -> 5bf90977ac15dd6e18f747d1f81e4170
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: baa1efe47e0876ea2ac481e48403c86c -> 69e6f55ea01b350798a9a6877d8f1980
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 14c5e1db9fad49b82200f4f31a0a565b -> 7923a05fa1d7bc1f80ceaccaa5f228e0
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: afbd3975bf11531916334bb2b0c8a8ae -> 36ab7d825d587e0cc526e78b0ebb9161
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: fc2423f98beb677ddd7c73ff4d349602 -> 1f3fecd3fc5aa9dbf2b78113dce250c9
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: cfab51a37e723cfe26dc7565ba52bcd5 -> c6bf249f98da2b512cd69683af52b9c2
+========================================================================
+Received Prepare
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.472 seconds
+Refreshing native plugins compatible for Editor in 7.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.380 seconds
+Domain Reload Profiling: 1849ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1380ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (531ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (399ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 7.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4676 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (36.4 KB). Loaded Objects now: 5266.
+Memory consumption went from 157.8 MB to 157.7 MB.
+Total: 3.555000 ms (FindLiveObjects: 0.294800 ms CreateObjectMapping: 0.131500 ms MarkObjects: 3.064000 ms  DeleteObjects: 0.064000 ms)
+
+Prepare: number of updated asset objects reloaded= 13
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: e9103b2a07f263d225b9db2219c09b78 -> bae6a604140e0a250291b1e16f121d39
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: bde573953ba0f6bf19c97838426ab80a -> d5b671c57e220f8f5762329e8441492a
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: 48e6b3fac0b399c50711f16bd41c8816 -> eb1e8c53a7e9fa9677eadf6a2b0d0a06
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: ff716c78e52da5331349ee5afb551ae0 -> e94d5e8039b3059958b75f580b01d92d
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: b80a9a481b5849433fcdc2d460e37347 -> a1b0cf70c1da74460326656e8af5710e
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 01f9e4921e4d4e90d0e5c7dfd9dbffd2 -> 1bb5710bc0b8cb78f6ea6e863ff10151
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 3d00a842f2f8d69336cef0ac724be6b3 -> 28a80e29014a346fdfbf9fcfab242363
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: 79238ccefa0708c223435f1dc3d20854 -> ef9ad2377268615344096e75083c8362
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: f3813acc92f29167b7d10fc1dbf8e3ba -> a960d8aef00a04f930ad74c43578b644
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 5bebf6d7e4e0b40cabf5160653ed201f -> 7307fcc2cdb055f6532e38774a569a65
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: 794db24fbb7feb232ba657aa0fb525d9 -> b189535c1f7ae24f8ff86af86691b79b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: 9461728c442af4b38e3f5d11de6c1778 -> c8686175e50db42ddb3dadad334fb8b8
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: dbc1a62bf29869b937a7b485a9a4e8b9 -> 4dab8ca82153c6fae527f96a4137d36c
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: f0939028680631d000a8d270d3bbac3d -> 865173d6911e851991cb5b638a3589e6
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: 694439caa47b6f5da2af2edca1b25222 -> f303dfc2fa379d2f76dff3275ada8ee3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: f95059a7d8a469dcebbb87be2d3d0416 -> d0c4943f6298d2764a3d0468364be257
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: c202bf0339783664caea33c21356a046 -> 084a42508d745f3aea9118f293a84b4e
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: 03af22a5bc813a6b78f46198a5eb55c6 -> ad03a8a61dfc41a66a94a2031b0902b1
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: e7810d97fc89a1c2cd4368de2bf1495b -> 10105a06fe75ca7e8c402c767365445e
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 53f14d445395b4c2a43e27363b76bd66 -> 05117f7ed360a6cb94be5b626b2a83e3
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: 2c9b048ef9506458330e396c4b0c2431 -> bb9f7096d86c26999605ddd07da0513c
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: 4db03225d1a41ab5649ec26fa27e013c -> a49d48d3da4f389d3d1a63af99f44908
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: 68c3ede4451f57c8b98d170475da36d0 -> dcda929b7780c21ac4b7986e5b81b03d
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1dfbec5950477f438ae1e4c741a840ce -> 1d25637805cceca39c048fed8663e586
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: cca1930af0f9c2029f31ccde04fc10f2 -> 3f17e74c0294932c496e8f34e2c56725
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: 32151c074b236190bb2ce4cb7f7b6f4a -> a685572eefa107e06fdce282e5fb0769
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: 75330f054acb6522a7de8777ea7855fb -> da2d6722b2568d4ce7ce71915ecf589b
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 4485d63befedbc876dff3d81b75ed656 -> 12b2423c8d5c77669ffc7dc24bbe64b0
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: d4986d71269c0dccd518287cdece7c76 -> baa1efe47e0876ea2ac481e48403c86c
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 6bad1c2462a708e6ecddb6afa149224e -> 14c5e1db9fad49b82200f4f31a0a565b
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: b14babd614691184022b51ac42e294cb -> afbd3975bf11531916334bb2b0c8a8ae
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: af2361fed1b5854c6cf002ef0f04f4f6 -> fc2423f98beb677ddd7c73ff4d349602
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: 1d9528f3b0c91d3839413d5f6740f171 -> cfab51a37e723cfe26dc7565ba52bcd5
+========================================================================
+Received Import Request.
+  Time since last request: 349.203519 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master
+  artifactKey: Guid(b31a63eeeff820a4398d8540151bd9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master using Guid(b31a63eeeff820a4398d8540151bd9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0ca5f896dd33d27b194740d1555d3b50') in 0.002188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.336831 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents
+  artifactKey: Guid(b9669812fb313c842943ae58d9c50699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents using Guid(b9669812fb313c842943ae58d9c50699) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '71d0e9d52b5e448b6c8577b82c47776f') in 0.000539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.242234 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts
+  artifactKey: Guid(29f130eb3fdf4574a8a586b2bc99f11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts using Guid(29f130eb3fdf4574a8a586b2bc99f11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2b204f1965850e0d901d237db12ef284') in 0.000556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.012582 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentOverride2d.cs
+  artifactKey: Guid(7e39f6090724e4a4a8aadeb042afa2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentOverride2d.cs using Guid(7e39f6090724e4a4a8aadeb042afa2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cbe01d257c310c4fdccd36e845adc5ca') in 0.000504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.865513 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotate2d.cs
+  artifactKey: Guid(8550f034611a06e4f88fc261204d8a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotate2d.cs using Guid(8550f034611a06e4f88fc261204d8a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3c001eb3cc01c6794ae60bb350a60dc9') in 0.000499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.493937 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs
+  artifactKey: Guid(8c7f4db162bab4443818dd13bed4b1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs using Guid(8c7f4db162bab4443818dd13bed4b1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5e52974ebe6069aab316004a75060ee1') in 0.000532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.430004 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSources2d.cs
+  artifactKey: Guid(70bd44a44cd62c64fbfc1eea95b24880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSources2d.cs using Guid(70bd44a44cd62c64fbfc1eea95b24880) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fe66c66f32f67c33c244b8ef1dfc672c') in 0.000547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.560456 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSourcesCache2d.cs
+  artifactKey: Guid(5492b7ed96378624cbcd72212fce093d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSourcesCache2d.cs using Guid(5492b7ed96378624cbcd72212fce093d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '774f1e48b62e641ce86fad572a775a92') in 0.000763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.024874 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef
+  artifactKey: Guid(299beb10465c46f41abeaf10478b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef using Guid(299beb10465c46f41abeaf10478b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c9725c537813a860a1dc0371e4fbbf8b') in 0.000655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.984196 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilder2d.cs
+  artifactKey: Guid(fc6dd3809c1761a4e9a227c70117ed54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilder2d.cs using Guid(fc6dd3809c1761a4e9a227c70117ed54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '89374fa26b6ba16dec992856243f2c37') in 0.000548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.077718 seconds.
+  path: Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilderState.cs
+  artifactKey: Guid(710022065e740cf40bf86ccac60e3741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilderState.cs using Guid(710022065e740cf40bf86ccac60e3741) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '26cf46ba7e349526621e2597939453ec') in 0.000570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.629 seconds
+Refreshing native plugins compatible for Editor in 9.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly with name 'NavMeshPlus' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlus' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+Assembly with name 'NavMeshPlusEditor' already exists (Assets/Environment/Scene1/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef)
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.765 seconds
+Domain Reload Profiling: 3392ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (403ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2765ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (669ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (495ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 8.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4642 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (46.6 KB). Loaded Objects now: 5250.
+Memory consumption went from 156.3 MB to 156.2 MB.
+Total: 8.649300 ms (FindLiveObjects: 0.403800 ms CreateObjectMapping: 0.245900 ms MarkObjects: 7.898300 ms  DeleteObjects: 0.099500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/NavMeshSurface.cs: e9103b2a07f263d225b9db2219c09b78 -> bae6a604140e0a250291b1e16f121d39
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolumeEditor.cs: bde573953ba0f6bf19c97838426ab80a -> d5b671c57e220f8f5762329e8441492a
+  custom:scripting/monoscript/fileName/AgentRotate2d.cs: 48e6b3fac0b399c50711f16bd41c8816 -> eb1e8c53a7e9fa9677eadf6a2b0d0a06
+  custom:scripting/monoscript/fileName/NavMeshExtension.cs: ff716c78e52da5331349ee5afb551ae0 -> e94d5e8039b3059958b75f580b01d92d
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemapEditor.cs: b80a9a481b5849433fcdc2d460e37347 -> a1b0cf70c1da74460326656e8af5710e
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/CollectTilemapSourcesCache2d.cs: 01f9e4921e4d4e90d0e5c7dfd9dbffd2 -> 1bb5710bc0b8cb78f6ea6e863ff10151
+  custom:scripting/monoscript/fileName/NavMeshComponentsGUIUtility.cs: 3d00a842f2f8d69336cef0ac724be6b3 -> 28a80e29014a346fdfbf9fcfab242363
+  custom:scripting/monoscript/fileName/CollectSourcesCache2d.cs: 79238ccefa0708c223435f1dc3d20854 -> ef9ad2377268615344096e75083c8362
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AgentOverride2dEditor.cs: f3813acc92f29167b7d10fc1dbf8e3ba -> a960d8aef00a04f930ad74c43578b644
+  custom:scripting/monoscript/fileName/NavMeshAssetManager.cs: 5bebf6d7e4e0b40cabf5160653ed201f -> 7307fcc2cdb055f6532e38774a569a65
+  custom:scripting/monoscript/fileName/NavMeshSurfaceEditor.cs: 794db24fbb7feb232ba657aa0fb525d9 -> b189535c1f7ae24f8ff86af86691b79b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifierVolume.cs: 9461728c442af4b38e3f5d11de6c1778 -> c8686175e50db42ddb3dadad334fb8b8
+  custom:scripting/monoscript/fileName/CollectSources2dEditor.cs: dbc1a62bf29869b937a7b485a9a4e8b9 -> 4dab8ca82153c6fae527f96a4137d36c
+  custom:scripting/monoscript/fileName/RotateAgentSmoothly.cs: f0939028680631d000a8d270d3bbac3d -> 865173d6911e851991cb5b638a3589e6
+  custom:scripting/monoscript/fileName/NavMeshModifierEditor.cs: 694439caa47b6f5da2af2edca1b25222 -> f303dfc2fa379d2f76dff3275ada8ee3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttributePropertyDrawer.cs: f95059a7d8a469dcebbb87be2d3d0416 -> d0c4943f6298d2764a3d0468364be257
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/NavMeshLinkEditor.cs: c202bf0339783664caea33c21356a046 -> 084a42508d745f3aea9118f293a84b4e
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NavMeshModifier.cs: 03af22a5bc813a6b78f46198a5eb55c6 -> ad03a8a61dfc41a66a94a2031b0902b1
+  custom:scripting/monoscript/fileName/NavMeshBuilderState.cs: e7810d97fc89a1c2cd4368de2bf1495b -> 10105a06fe75ca7e8c402c767365445e
+  custom:scripting/monoscript/fileName/RotateAgentInstantly.cs: 53f14d445395b4c2a43e27363b76bd66 -> 05117f7ed360a6cb94be5b626b2a83e3
+  custom:scripting/monoscript/fileName/CollectSources2d.cs: 2c9b048ef9506458330e396c4b0c2431 -> bb9f7096d86c26999605ddd07da0513c
+  custom:scripting/monoscript/fileName/NavMeshBuilder2d.cs: 4db03225d1a41ab5649ec26fa27e013c -> a49d48d3da4f389d3d1a63af99f44908
+  custom:scripting/monoscript/fileName/NavMeshAgentAttributePropertyDrawer.cs: 68c3ede4451f57c8b98d170475da36d0 -> dcda929b7780c21ac4b7986e5b81b03d
+  custom:scripting/monoscript/fileName/RootSources2d.cs: 1dfbec5950477f438ae1e4c741a840ce -> 1d25637805cceca39c048fed8663e586
+  custom:scripting/monoscript/fileName/NavMeshLink.cs: cca1930af0f9c2029f31ccde04fc10f2 -> 3f17e74c0294932c496e8f34e2c56725
+  custom:scripting/monoscript/fileName/RootSources2dEditor.cs: 32151c074b236190bb2ce4cb7f7b6f4a -> a685572eefa107e06fdce282e5fb0769
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AgentOverride2d.cs: 75330f054acb6522a7de8777ea7855fb -> da2d6722b2568d4ce7ce71915ecf589b
+  custom:scripting/monoscript/fileName/AgentRotateSmooth2d.cs: 4485d63befedbc876dff3d81b75ed656 -> 12b2423c8d5c77669ffc7dc24bbe64b0
+  custom:scripting/monoscript/fileName/NavMeshExtensionsProvider.cs: d4986d71269c0dccd518287cdece7c76 -> baa1efe47e0876ea2ac481e48403c86c
+  custom:scripting/monoscript/fileName/CollectSourcesCache2dEditor.cs: 6bad1c2462a708e6ecddb6afa149224e -> 14c5e1db9fad49b82200f4f31a0a565b
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/NavMeshAreaAttribute.cs: b14babd614691184022b51ac42e294cb -> afbd3975bf11531916334bb2b0c8a8ae
+  custom:scripting/monoscript/fileName/NavMeshAgentAttribute.cs: af2361fed1b5854c6cf002ef0f04f4f6 -> fc2423f98beb677ddd7c73ff4d349602
+  custom:scripting/monoscript/fileName/NavMeshModifierTilemap.cs: 1d9528f3b0c91d3839413d5f6740f171 -> cfab51a37e723cfe26dc7565ba52bcd5
+========================================================================
+Received Import Request.
+  Time since last request: 2453.313999 seconds.
+  path: Assets/Environment/Scene1/New Physics Material 2D.physicsMaterial2D
+  artifactKey: Guid(2baf4308c8356dd4d900a33ac2f82f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Scene1/New Physics Material 2D.physicsMaterial2D using Guid(2baf4308c8356dd4d900a33ac2f82f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3b59880575b60c8f8f234624f19a5620') in 0.013564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 190.292273 seconds.
+  path: Assets/Scenes/Main/NavMesh-NAV.asset
+  artifactKey: Guid(69f38203e6652224286dd264f9c19b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main/NavMesh-NAV.asset using Guid(69f38203e6652224286dd264f9c19b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c4d4724c9f5ba7a3771bb61b59ba1fdf') in 0.002427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Main/NavMesh-Nav 2.asset
+  artifactKey: Guid(b4179edc3d075844cb4f1599c8671539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main/NavMesh-Nav 2.asset using Guid(b4179edc3d075844cb4f1599c8671539) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e9a749f1dbe18ecb879b8513cf1d3783') in 0.001844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Main/NavMesh-NavMesh.asset
+  artifactKey: Guid(13f403c9377fcb743877513778a0e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main/NavMesh-NavMesh.asset using Guid(13f403c9377fcb743877513778a0e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '713c65a767a95660716f83221cbdea45') in 0.001020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.153586 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(3364c739592d4484ea6862a58c3975e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(3364c739592d4484ea6862a58c3975e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '74fe9461ae70be20b0b9b8a6e107ec64') in 0.000479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.830238 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cfb5d237ef3c3b4f0aab9a7af4a6995c') in 0.000678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
