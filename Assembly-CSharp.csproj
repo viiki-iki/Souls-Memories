@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D76A5042-E795-D191-2034-2F487E8DFB02}</ProjectGuid>
+    <ProjectGuid>{F7AD4052-1EC7-A8F5-70FA-8507B1A97E65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>ScriptableObject-Architecture</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -60,177 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SO Architecture\Extensions\Vector4Extensions.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\StringGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\QuaternionCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\IntGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\ObjectAdder.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\Vector2GameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\IntGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\SByteVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\AudioClipCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\Vector4UnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\GameObjectGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\DoubleGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\DoubleCollection.cs" />
-    <Compile Include="Assets\SO Architecture\SOArchitecturePreferences.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\UShortGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\IGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Utility\SOArchitectureBaseObject.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\Vector2Collection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\FloatGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\BoolGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\StringUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\UlongCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\ULongUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\ULongVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\Vector3GameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\Vector4Collection.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\LongCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\Vector2Variable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\SByteGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\LongGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\GameObjectVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\ObjectCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\ObjectGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Utility\IStackTraceObject.cs" />
-    <Compile Include="Assets\SO Architecture\References\Vector2Reference.cs" />
-    <Compile Include="Assets\SO Architecture\References\BaseReference.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\Collection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\Vector2UnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\DoubleVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\UIntVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\AudioClipUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\SceneVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\Color32Collection.cs" />
-    <Compile Include="Assets\SO Architecture\References\ObjectReference.cs" />
-    <Compile Include="Assets\SO Architecture\References\IntReference.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\StringCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\UIntUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\DoubleGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\References\Color32Reference.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\Color32Variable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\IntCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\DoubleUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\ULongGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\ByteVariable.cs" />
-    <Compile Include="Assets\SO Architecture\References\AudioClipReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\GameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Attributes\MultiLine.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\UintCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\ShortGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Utility\SOArchitecture_Settings.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\GameObjectGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\References\SByteReference.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\DamageDealerWithEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\UnitHealth.cs" />
-    <Compile Include="Assets\SO Architecture\References\BoolReference.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\AnimationCurveCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\SceneCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\UIntGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\References\Vector4Reference.cs" />
-    <Compile Include="Assets\SO Architecture\References\ByteReference.cs" />
-    <Compile Include="Assets\SO Architecture\References\DoubleReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\ObjectGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\SbyteCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\ImageFillSetter.cs" />
-    <Compile Include="Assets\SO Architecture\References\LongReference.cs" />
-    <Compile Include="Assets\SO Architecture\References\ShortReference.cs" />
-    <Compile Include="Assets\SO Architecture\References\SceneReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\LongUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\FloatVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\QuaternionGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\References\GameObjectReference.cs" />
-    <Compile Include="Assets\SO Architecture\Utility\SOArchitectureBaseMonobehaviour.cs" />
-    <Compile Include="Assets\SO Architecture\References\QuaternionReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\GameEventBase.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\ShortCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\ColorCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\ColorVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\UShortVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\Vector3Collection.cs" />
-    <Compile Include="Assets\SO Architecture\References\CharReference.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\UshortCollection.cs" />
-    <Compile Include="Assets\SO Architecture\References\UIntReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\CharGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\StringGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\Vector3GameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\StringVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\CharUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\UShortUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\ByteUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\References\UShortReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\ByteGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\GameObjectUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\LayerMaskVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\Vector4Variable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\Vector3UnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\IGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\ShortVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\CollectionCountDisplayer.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\AudioClipVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Utility\SOArchitecture_Utility.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\QuaternionUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\References\ULongReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\BoolUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\BaseCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\AudioClipGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\QuaternionGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\BoolGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\AssemblyInfo.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\UIntGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\References\ColorReference.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\BoolVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\BoolCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\FloatUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\IntVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\QuaternionVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\ObjectUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\BaseVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\AudioClipGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\GameEventStackTrace.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\AnimationCurveVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\BaseGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\KeyboardMover.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\FloatGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\ShortUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\Vector2GameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\References\StringReference.cs" />
-    <Compile Include="Assets\SO Architecture\References\Vector3Reference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\ShortGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\CharVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\Vector4GameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\CharCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\ByteCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\CharGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\References\LayerMaskReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\IntUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Extensions\QuaternionExtensions.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\LongVariable.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\FloatCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\Disabler.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\ULongGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\SByteGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\References\AnimationCurveReference.cs" />
-    <Compile Include="Assets\SO Architecture\Collections\GameObjectCollection.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Game Events\ByteGameEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\Vector3Variable.cs" />
-    <Compile Include="Assets\SO Architecture\Examples\Scripts\DamageDealer.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\LongGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Variables\ObjectVariable.cs" />
-    <Compile Include="Assets\SO Architecture\References\FloatReference.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\Vector4GameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Responses\SByteUnityEvent.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\UShortGameEventListener.cs" />
-    <Compile Include="Assets\SO Architecture\Events\Listeners\GameEventListener.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\SO Architecture\Documentation\References.txt" />
-    <None Include="Assets\SO Architecture\ScriptableObject-Architecture.asmdef" />
-    <None Include="Assets\SO Architecture\Documentation\Collection.txt" />
-    <None Include="Assets\SO Architecture\Documentation\Variables.txt" />
-    <None Include="Assets\SO Architecture\Documentation\Event-Listeners.txt" />
-    <None Include="Assets\SO Architecture\Documentation\Events.txt" />
+    <Compile Include="Assets\Player\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -565,48 +395,12 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1097,16 +891,216 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Path.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Aseprite.Common">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem.ForUI">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Aseprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ScriptableObject-Architecture.Editor.csproj">
+      <Project>{0AFC1235-8DCD-81D4-3A2A-4787B8216EC1}</Project>
+      <Name>ScriptableObject-Architecture.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ScriptableObject-Architecture.csproj">
+      <Project>{D76A5042-E795-D191-2034-2F487E8DFB02}</Project>
+      <Name>ScriptableObject-Architecture</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
