@@ -382,9 +382,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Mechanics/Objects/ObjectsData.cs"
-"Assets/Player/Scripts/PlayerMovement.cs"
-"Assets/Player/Scripts/PlayerPerspective.cs"
+"Assets/1. Player/Scripts/PlayerMovement.cs"
+"Assets/1. Player/Scripts/PlayerPerspective.cs"
+"Assets/3. Mechanics/Objects/ObjectsData.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -60,9 +60,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mechanics\Objects\ObjectsData.cs" />
-    <Compile Include="Assets\Player\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Player\Scripts\PlayerPerspective.cs" />
+    <Compile Include="Assets\1. Player\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\3. Mechanics\Objects\ObjectsData.cs" />
+    <Compile Include="Assets\1. Player\Scripts\PlayerPerspective.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
