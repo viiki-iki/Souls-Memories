@@ -61,7 +61,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -329,7 +329,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7629055914421877742}
-  - component: {fileID: 5778241799426740122}
   m_Layer: 6
   m_Name: MiddleObstacles
   m_TagString: Untagged
@@ -356,18 +355,6 @@ Transform:
   - {fileID: 4452121569758651151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!210 &5778241799426740122
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175251892243380520}
-  m_Enabled: 0
-  m_SortingLayerID: 1577233143
-  m_SortingLayer: 2
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
 --- !u!1 &5666291325249899969
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +521,7 @@ Transform:
   m_GameObject: {fileID: 6250869881605029809}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 2.13, z: 0}
+  m_LocalPosition: {x: 0.37, y: 4.88, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -622,7 +609,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.26}

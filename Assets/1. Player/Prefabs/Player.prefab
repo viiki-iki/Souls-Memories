@@ -93,10 +93,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4968728668626837357}
   - component: {fileID: 3525694544799186613}
-  - component: {fileID: 6204209529841503275}
   - component: {fileID: 7835343301186952204}
   - component: {fileID: 630624786275811905}
   - component: {fileID: 9091222729771874475}
+  - component: {fileID: 6204209529841503275}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -172,33 +172,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!50 &6204209529841503275
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339592776524901887}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &7835343301186952204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,10 +232,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 18cb326b-b7a0-4ac0-8bf8-42eb1ff38bfe
     m_ActionName: Player/Move[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: d6a33d9e-115e-4956-9e50-313d3ea7b728
-    m_ActionName: Player/Interact[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -324,3 +293,30 @@ PolygonCollider2D:
       - {x: 0.08229475, y: -0.05081427}
       - {x: 0.11876336, y: -0.013992488}
   m_UseDelaunayMesh: 0
+--- !u!50 &6204209529841503275
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339592776524901887}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
