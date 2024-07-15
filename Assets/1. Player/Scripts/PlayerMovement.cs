@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 destination;
     private Vector2 detourPosition;
-    private Rigidbody2D rb;
+   // private Rigidbody2D rb;
 
     private bool isMoving;
     private bool isDetouring;
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoving = false;
         isDetouring = false;
-        rb = GetComponent<Rigidbody2D>();
+       // rb = GetComponent<Rigidbody2D>();
         // AdjustPerspective();
     }
 
@@ -79,10 +79,10 @@ public class PlayerMovement : MonoBehaviour
         //verificar os 2 lados do obs
         detourPos1 = itemPoint + perpDirection * detourDistance;
         detourPos2 = itemPoint - perpDirection * detourDistance;
-        detour1Clear = RaycastVerification(transform.position, detourPos1);
-        detour2Clear = RaycastVerification(transform.position, detourPos2);
-        end1Clear = RaycastVerification(detourPos1, destination);
-        end2Clear = RaycastVerification(detourPos2, destination);
+        detour1Clear = RaycastVerification(transform.position, detourPos1, Color.red);
+        detour2Clear = RaycastVerification(transform.position, detourPos2, Color.blue);
+        end1Clear = RaycastVerification(detourPos1, destination, Color.red);
+        end2Clear = RaycastVerification(detourPos2, destination, Color.blue);
 
         //escolher o desvio
         if (detour1Clear && detour2Clear)
@@ -100,17 +100,17 @@ public class PlayerMovement : MonoBehaviour
             detourPosition = detourPos2;            
         else    // quando os 2 lados n dao certo
         {
-            print("alterando caminho");
+            print("alterando");
             isMoving = false;
             StartCoroutine(PathOptionsCheck(itemPoint, perpDirection, detourDistance + 0.5f));
         }
         yield break;
     }
 
-    private bool RaycastVerification(Vector2 origin, Vector2 direction)
+    private bool RaycastVerification(Vector2 origin, Vector2 direction, Color color)
     {
         bool pathClear = !Physics2D.Raycast(origin, direction - origin, Vector2.Distance(origin, direction), obstacleLayer);
-        Debug.DrawLine(origin, direction, Color.red, 3f);
+        Debug.DrawLine(origin, direction, color, 2f);
 
         if (pathClear)        
             return true;       
@@ -140,6 +140,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector2 nextPosition = isDetouring ? detourPosition : destination;
             transform.position = Vector2.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);           
+
+            if (isDetouring && !Physics2D.Raycast(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), obstacleLayer))
+            {
+                nextPosition = destination;
+                isDetouring = false;
+                //print("cortou caminho");
+            }
 
             if ((Vector2)transform.position == nextPosition)         
             {
