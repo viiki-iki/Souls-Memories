@@ -22,15 +22,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask obstacleLayer;
 
-    // [SerializeField] private float perspectiveScale;
-    // [SerializeField] private float scaleRatio;
-
     private void Start()
     {
         isMoving = false;
         isDetouring = false;
-       // rb = GetComponent<Rigidbody2D>();
-        // AdjustPerspective();
     }
 
     public void OnClick(InputAction.CallbackContext ctx)
@@ -53,18 +48,18 @@ public class PlayerMovement : MonoBehaviour
                     Vector2 point = goToCollider.ClosestPoint(playerCenter);
                     destination = point;
                     // print("teste");
-                    Move();
+                    CheckObstacles();
                 }             
             }
             else if (hitGround.collider != null && hitObs.collider == null)
             {
                 destination = hitGround.point;
-                Move();            
+                CheckObstacles();            
             } 
         }
     }
 
-    private void Move()
+    private void CheckObstacles()
     {
         RaycastHit2D[] obstaclesHit = Physics2D.RaycastAll(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), obstacleLayer);
         foreach (var item in obstaclesHit)
@@ -87,8 +82,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         isMoving = true;
-       // if (!isDetouring)
-       //     Debug.Log("No obstacles");
     }
 
     IEnumerator PathOptionsCheck(Vector2 itemPoint, Vector2 perpDirection, float detourDistance)
@@ -149,14 +142,6 @@ public class PlayerMovement : MonoBehaviour
             collision.GetComponentInParent<ItemData_Scene>().isClose = false;
         }
     }
-
-    // private void AdjustPerspective()
-    // {
-    //     Vector3 scale = transform.localScale;
-    //     scale.x = perspectiveScale / (scaleRatio - transform.position.y);
-    //     scale.y = perspectiveScale / (scaleRatio - transform.position.y);
-    //     transform.localScale = scale;
-    // }
 
     void Update()
     {        
