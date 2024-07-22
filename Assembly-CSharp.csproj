@@ -61,8 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\3. Mechanics\Objects\ItemData_Scene.cs" />
+    <Compile Include="Assets\1. Player\Scripts\PlayerInteractions.cs" />
     <Compile Include="Assets\1. Player\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\1. Player\Scripts\PlayerPerspective.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

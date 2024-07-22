@@ -61,7 +61,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -250,7 +250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4452121569758651151
 Transform:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &463436490375750474
 Transform:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ Transform:
   m_GameObject: {fileID: 6250869881605029809}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 4.88, z: 0}
+  m_LocalPosition: {x: 2.15, y: 2.78, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -609,7 +609,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.26}
@@ -624,17 +624,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.26410878, y: -0.19723716}
-      - {x: -0.1793123, y: -0.2749594}
-      - {x: -0.051273745, y: -0.30443257}
-      - {x: 0.0746916, y: -0.26757237}
-      - {x: 0.14404015, y: -0.18758644}
-      - {x: 0.23202229, y: -0.11438399}
-      - {x: 0.21987695, y: -0.0065055084}
-      - {x: 0.10615351, y: 0.00823166}
-      - {x: -0.103843115, y: -0.057127465}
-      - {x: -0.17567927, y: -0.07102441}
-      - {x: -0.23213167, y: -0.12949055}
+    - - {x: -0.26410878, y: -0.21414214}
+      - {x: -0.2010866, y: -0.28226343}
+      - {x: -0.043969713, y: -0.31417134}
+      - {x: 0.081995554, y: -0.2797457}
+      - {x: 0.17082156, y: -0.18758644}
+      - {x: 0.22471833, y: -0.114383996}
+      - {x: 0.21987695, y: -0.028299674}
+      - {x: 0.08441839, y: -0.013503358}
+      - {x: -0.057899058, y: -0.03763023}
+      - {x: -0.17567927, y: -0.07102442}
+      - {x: -0.24179168, y: -0.11983064}
   m_UseDelaunayMesh: 0
 --- !u!1 &8124152571580420080
 GameObject:

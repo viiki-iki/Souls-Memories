@@ -79,8 +79,9 @@ GameObject:
   - component: {fileID: 3525694544799186613}
   - component: {fileID: 7835343301186952204}
   - component: {fileID: 630624786275811905}
-  - component: {fileID: 9091222729771874475}
   - component: {fileID: 6204209529841503275}
+  - component: {fileID: 5228677281254684389}
+  - component: {fileID: 8419496100866089028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -169,12 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &630624786275811905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +197,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7835343301186952204}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 5228677281254684389}
+        m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 0
         m_Arguments:
@@ -221,62 +216,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!60 &9091222729771874475
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339592776524901887}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49999997, y: 0}
-    oldSize: {x: 0.28, y: 0.41}
-    newSize: {x: 0.28, y: 0.41}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.11826642, y: 0.014259458}
-      - {x: 0.076291144, y: 0.041026294}
-      - {x: -0.0034852177, y: 0.051608384}
-      - {x: -0.09128063, y: 0.045286357}
-      - {x: -0.12795348, y: 0.017293572}
-      - {x: -0.12955534, y: -0.01082927}
-      - {x: -0.10229237, y: -0.040165335}
-      - {x: -0.046529114, y: -0.06840682}
-      - {x: 0.02653937, y: -0.07184738}
-      - {x: 0.08229475, y: -0.05081427}
-      - {x: 0.11876336, y: -0.013992488}
-  m_UseDelaunayMesh: 0
 --- !u!50 &6204209529841503275
 Rigidbody2D:
   serializedVersion: 4
@@ -304,3 +243,56 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5228677281254684389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339592776524901887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96596069a15e96c4faf55aab265f77f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  lastItemClicked: {fileID: 11400000, guid: 37cdf6d582a3bbf49b92711aa972c9f0, type: 2}
+  walkToDestination: {fileID: 11400000, guid: 7fe72952507045946960fb47c395dae4, type: 2}
+--- !u!114 &8419496100866089028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339592776524901887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b54fa01acca67d41bb950e0d324bfcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 7fe72952507045946960fb47c395dae4, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7835343301186952204}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: CheckObstacles
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: {x: 0, y: 0}

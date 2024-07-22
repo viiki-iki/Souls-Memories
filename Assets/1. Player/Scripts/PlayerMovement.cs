@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using ScriptableObjectArchitecture;
+
 public class PlayerMovement : MonoBehaviour
 {
+    private PlayerInteractions playerInteractions;
     private Vector2 destination;
     private Vector2 detourPosition;
     private readonly RaycastHit2D[] hitPoints = new RaycastHit2D[64];
@@ -19,52 +21,22 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 detourPos2;
 
     [SerializeField] private float speed;
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask obstacleLayer;
 
     private void Start()
     {
         isMoving = false;
         isDetouring = false;
+        playerInteractions = GetComponent<PlayerInteractions>();
     }
 
-    public void OnClick(InputAction.CallbackContext ctx)
-    {        
-        if (ctx.performed)
-        {
-            Vector2 mousePosition = Mouse.current.position.ReadValue();
-            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);             
-            RaycastHit2D hitGround = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, groundLayer);
-            RaycastHit2D hitObs = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, obstacleLayer);
-
-            if (hitObs.collider != null && hitObs.transform.gameObject.CompareTag("Clickable"))
-            {
-                GameObject obj = hitObs.transform.gameObject;
-                if (obj.GetComponentInParent<ItemData_Scene>().isClose == false)
-                {
-                    Collider2D goToCollider = obj.GetComponentInParent<ItemData_Scene>().goToCollider;
-                    Collider2D playerCollider = GetComponent<Collider2D>();
-                    Vector2 playerCenter = playerCollider.bounds.center;
-                    Vector2 point = goToCollider.ClosestPoint(playerCenter);
-                    destination = point;
-                    CheckObstacles();
-                }             
-            }
-            else if (hitGround.collider != null && hitObs.collider == null)
-            {
-                destination = hitGround.point;
-                CheckObstacles();            
-            } 
-        }
-    }
-
-    private void CheckObstacles()
+    public void CheckObstacles(Vector2 target)
     {
+        destination = target;
         Vector2 origin = transform.position;
-        Vector2 direction = (destination - origin).normalized;
+        Vector2 direction = destination - origin;
         float distance = Vector2.Distance(origin, destination);
 
-        int hits = Physics2D.RaycastNonAlloc(origin, direction, hitPoints, distance, obstacleLayer);
+        int hits = Physics2D.RaycastNonAlloc(origin, direction, hitPoints, distance, playerInteractions.obstacleLayer);
         
         if(hits > 0)
         {
@@ -76,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
                     Collider2D obsCollider = hitPoints[i].collider;
                     Vector2 obsSize = obsCollider.bounds.size;
-                    float detourDistance = Mathf.Max(0.5f, Mathf.Min(obsSize.x, obsSize.y) / 2f);
+                    float detourDistance = Mathf.Max(0.3f, Mathf.Min(obsSize.x, obsSize.y) / 2f);
                     Vector2 perpDirection = Vector2.Perpendicular(direction);
 
                     StartCoroutine(PathOptionsCheck(hitPoints[i].point, perpDirection, detourDistance));
@@ -122,29 +94,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool RaycastVerification(Vector2 origin, Vector2 direction, Color color)
     {
-        bool pathClear = !Physics2D.Raycast(origin, direction - origin, Vector2.Distance(origin, direction), obstacleLayer);
+        bool pathClear = !Physics2D.Raycast(origin, direction - origin, Vector2.Distance(origin, direction), playerInteractions.obstacleLayer);
         Debug.DrawLine(origin, direction, color, 2f);
 
         if (pathClear)        
             return true;       
         else       
             return false;              
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("InteractableArea"))
-        {
-            collision.GetComponentInParent<ItemData_Scene>().isClose = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("InteractableArea"))
-        {
-            collision.GetComponentInParent<ItemData_Scene>().isClose = false;
-        }
     }
 
     void Update()
@@ -154,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
             Vector2 nextPosition = isDetouring ? detourPosition : destination;
             transform.position = Vector2.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);           
 
-            if (isDetouring && !Physics2D.Raycast(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), obstacleLayer))
+            if (isDetouring && !Physics2D.Raycast(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), playerInteractions.obstacleLayer))
             {
                 nextPosition = destination;
                 isDetouring = false;
