@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 destination;
     private Vector2 detourPosition;
-   // private Rigidbody2D rb;
+    private readonly RaycastHit2D[] hitPoints = new RaycastHit2D[64];
 
     private bool isMoving;
     private bool isDetouring;
@@ -47,7 +47,6 @@ public class PlayerMovement : MonoBehaviour
                     Vector2 playerCenter = playerCollider.bounds.center;
                     Vector2 point = goToCollider.ClosestPoint(playerCenter);
                     destination = point;
-                    // print("teste");
                     CheckObstacles();
                 }             
             }
@@ -61,24 +60,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckObstacles()
     {
-        RaycastHit2D[] obstaclesHit = Physics2D.RaycastAll(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), obstacleLayer);
-        foreach (var item in obstaclesHit)
+        Vector2 origin = transform.position;
+        Vector2 direction = (destination - origin).normalized;
+        float distance = Vector2.Distance(origin, destination);
+
+        int hits = Physics2D.RaycastNonAlloc(origin, direction, hitPoints, distance, obstacleLayer);
+        
+        if(hits > 0)
         {
-            if (item.collider != null)
+            for (int i = 0; i < hits; i++)
             {
-                Debug.Log("Obstacle in the way: ");
+                if (hitPoints[i].collider != null)
+                {
+                    Debug.Log("Obstacle in the way: ");
 
-                Collider2D obsCollider = item.collider;
-                Vector2 obsSize = obsCollider.bounds.size;
-                //float detourDistance = Mathf.Min(obsSize.x, obsSize.y) + 0.5f;
-                float detourDistance = Mathf.Max(0.5f, Mathf.Min(obsSize.x, obsSize.y) / 2f); // + 0.5f;
+                    Collider2D obsCollider = hitPoints[i].collider;
+                    Vector2 obsSize = obsCollider.bounds.size;
+                    float detourDistance = Mathf.Max(0.5f, Mathf.Min(obsSize.x, obsSize.y) / 2f);
+                    Vector2 perpDirection = Vector2.Perpendicular(direction);
 
-                //ponto de desvio
-                Vector2 direction = (destination - (Vector2)transform.position).normalized;
-                Vector2 perpDirection = Vector2.Perpendicular(direction);
-
-                StartCoroutine(PathOptionsCheck(item.point, perpDirection, detourDistance));
-                isDetouring = true;
+                    StartCoroutine(PathOptionsCheck(hitPoints[i].point, perpDirection, detourDistance));
+                    isDetouring = true;
+                }
             }
         }
         isMoving = true;
@@ -135,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
             collision.GetComponentInParent<ItemData_Scene>().isClose = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("InteractableArea"))
@@ -154,7 +158,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 nextPosition = destination;
                 isDetouring = false;
-                //print("cortou caminho");
             }
 
             if ((Vector2)transform.position == nextPosition)         
@@ -165,6 +168,5 @@ public class PlayerMovement : MonoBehaviour
                     isMoving = false;
             }
         }
-      //  AdjustPerspective();
     }
 }
