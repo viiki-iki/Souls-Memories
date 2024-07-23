@@ -8,8 +8,9 @@ public class PlayerInteractions : MonoBehaviour
 {  
     public LayerMask groundLayer;
     public LayerMask obstacleLayer;
-    [SerializeField] private GameObjectVariable lastItemClicked;
+    private GameObject lastItemClicked;
     [SerializeField] private Vector2GameEvent walkToDestination;
+    [SerializeField] private ItemDataGameEvent getItem;
 
     public void OnClick(InputAction.CallbackContext ctx)
     {
@@ -24,7 +25,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 GameObject obj = hitObs.transform.gameObject;
                 ItemData_Scene script = obj.GetComponentInParent<ItemData_Scene>();
-                lastItemClicked.BaseValue = obj;
+                lastItemClicked = obj;
 
                 if (script.isClose == false)
                 {
@@ -32,24 +33,29 @@ public class PlayerInteractions : MonoBehaviour
                     Collider2D playerCollider = GetComponentInChildren<Collider2D>();
                     Vector2 playerCenter = playerCollider.bounds.center;
                     Vector2 point = goToCollider.ClosestPoint(playerCenter);
-                    //destination = point;
                     walkToDestination.Raise(point);
-                   // CheckObstacles();
                 }
                 else
                 {
-                    //inventory
+                    GetItem(obj.transform.parent.gameObject);
                 }
             }
             else if (hitGround.collider != null && hitObs.collider == null)
             {
-               // lastItemClicked.BaseValue = null;
-              //  destination = hitGround.point;
+                lastItemClicked = null;
                 walkToDestination.Raise(hitGround.point);
-               // CheckObstacles();
             }
-            //else { //lastItemClicked.BaseValue = null; }
+            else { lastItemClicked = null; }
         }
+    }
+
+    private void GetItem(GameObject parent)
+    {
+        ItemData script = parent.GetComponent<ItemData_Scene>().ItemData;
+        getItem.Raise(script);
+        lastItemClicked = null;
+        //parent.SetActive(false);
+        Destroy(parent);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +63,11 @@ public class PlayerInteractions : MonoBehaviour
         if (collision.gameObject.CompareTag("InteractableArea"))
         {
             collision.GetComponentInParent<ItemData_Scene>().isClose = true;
+
+            if(lastItemClicked != null)
+            {
+                GetItem(collision.transform.parent.gameObject);
+            }             
         }
     }
 

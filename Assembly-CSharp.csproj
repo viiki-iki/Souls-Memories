@@ -60,9 +60,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\3. Mechanics\Objects\ItemData_Scene.cs" />
     <Compile Include="Assets\1. Player\Scripts\PlayerInteractions.cs" />
+    <Compile Include="Assets\CODE_GENERATION\Events\Game Events\ItemDataGameEvent.cs" />
     <Compile Include="Assets\1. Player\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\CODE_GENERATION\Events\Responses\ItemDataUnityEvent.cs" />
+    <Compile Include="Assets\3. Mechanics\Inventory\Scripts\InventoryManager.cs" />
+    <Compile Include="Assets\CODE_GENERATION\References\ItemDataReference.cs" />
+    <Compile Include="Assets\CODE_GENERATION\Events\Listeners\ItemDataGameEventListener.cs" />
+    <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData_Scene.cs" />
+    <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData.cs" />
+    <Compile Include="Assets\CODE_GENERATION\Variables\ItemDataVariable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

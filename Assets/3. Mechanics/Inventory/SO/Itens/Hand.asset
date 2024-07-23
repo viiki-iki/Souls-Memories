@@ -9,15 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edc690a6e84028a488f0c8e94cbc98bd, type: 3}
-  m_Name: LastItemClicked
+  m_Script: {fileID: 11500000, guid: bd6aa3e8fb7a7cc4ab09a730a9d9775b, type: 3}
+  m_Name: Hand
   m_EditorClassIdentifier: 
-  _value: {fileID: 0}
-  _readOnly: 0
-  _raiseWarning: 1
-  _isClamped: 0
-  _minClampedValue: {fileID: 0}
-  _maxClampedValue: {fileID: 0}
-  _event:
-    m_PersistentCalls:
-      m_Calls: []
+  itemName: Hand
+  icon: {fileID: 21300000, guid: dd9e5387b649129409d37d9ce3d25f57, type: 3}
+  collected: 0
