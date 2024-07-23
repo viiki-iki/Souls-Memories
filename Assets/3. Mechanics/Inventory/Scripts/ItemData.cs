@@ -5,9 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemData", menuName = "SO/ItemData", order = 1)]
 public class ItemData : ScriptableObject
 {
-    [SerializeField] private string itemName;
-    [SerializeField] private Sprite icon;
-    public Sprite Icon => icon;
-    public bool collected = false;
+    public string itemName;
+    public string description;
+   // public GameObject inventorySlot;
+    public Sprite icon;
+   // public bool collected = false;
   //  public bool canCombine;
 }
