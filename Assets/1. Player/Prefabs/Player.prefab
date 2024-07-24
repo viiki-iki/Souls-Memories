@@ -261,8 +261,9 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
-  lastItemClicked: {fileID: 11400000, guid: 37cdf6d582a3bbf49b92711aa972c9f0, type: 2}
   walkToDestination: {fileID: 11400000, guid: 7fe72952507045946960fb47c395dae4, type: 2}
+  addItem: {fileID: 11400000, guid: dedf7ad476efe0645bc49b5eecbb096f, type: 2}
+  inventoryManager: {fileID: 0}
 --- !u!114 &8419496100866089028
 MonoBehaviour:
   m_ObjectHideFlags: 0
