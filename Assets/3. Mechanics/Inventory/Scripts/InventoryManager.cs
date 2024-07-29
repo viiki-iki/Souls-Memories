@@ -12,6 +12,11 @@ public class InventoryManager : MonoBehaviour
     private float maxCapacity = 5;
     public StringVariable usingItem;
 
+    private void Start()
+    {
+        usingItem.Value = "";
+    }
+
     public bool CanAddItem()
     {      
         if (itens.Count < maxCapacity)
@@ -47,7 +52,12 @@ public class InventoryManager : MonoBehaviour
     {
         //cursor volta ao normal
         //icon do item liga
-        usingItem.Value = null;
+        usingItem.Value = "";
+        print("cancelou");
+    }
+
+    public void CombineItens()
+    {
     }
 
     private void RemoveItem(ItemData item)

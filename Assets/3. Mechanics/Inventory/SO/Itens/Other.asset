@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd6aa3e8fb7a7cc4ab09a730a9d9775b, type: 3}
-  m_Name: Hand
+  m_Name: Other
   m_EditorClassIdentifier: 
-  itemName: Hand1
-  icon: {fileID: 21300000, guid: dd9e5387b649129409d37d9ce3d25f57, type: 3}
-  itensToCombineWith: 39
+  itemName: Other
+  icon: {fileID: 21300000, guid: 8a740f58b63b9dc44a260a8951abeefe, type: 3}
+  itensToCombineWith: 24

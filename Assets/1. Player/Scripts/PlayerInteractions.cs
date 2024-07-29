@@ -1,11 +1,13 @@
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class PlayerInteractions : MonoBehaviour
 {  
     public LayerMask groundLayer;
     public LayerMask obstacleLayer;
+
     private GameObject lastThingClicked = null;
     //private bool isUsingItem = false;
     [SerializeField] private Vector2GameEvent walkToDestination;
@@ -15,7 +17,7 @@ public class PlayerInteractions : MonoBehaviour
     public void OnClick(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
-        {
+        {           
             Vector2 mousePosition = Mouse.current.position.ReadValue();
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             RaycastHit2D hitGround = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, groundLayer);
@@ -52,24 +54,42 @@ public class PlayerInteractions : MonoBehaviour
 
     private void TryInteraction(GameObject obj)
     {
-        if(inventoryManager.usingItem.Value != null)
+        ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
+      
+        if(inventoryManager.usingItem.Value != "")
         {
-            ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
-            script.CheckInteractions(inventoryManager.usingItem.Value);
-          //  if(script.)
+            if (script.CheckInteractions(inventoryManager.usingItem.Value))
+            {
+                //inventoryManager.CombineItens();
+                print("combinou " + inventoryManager.usingItem.Value + " com " + script.itemName);
+            }
+            else
+            {
+                print("n pode combinar");
+                inventoryManager.CancelInteractionWithItem();
+            }
         }
+        else
+        {
+            TryAdd(obj, script);
+        }
+
+        lastThingClicked = null;
+    }
+
+    private void TryAdd(GameObject obj, ItemData script)
+    {
         if (inventoryManager.CanAddItem())
         {
             print("pode pegar item");
-            
-            //addItem.Raise(script);       
+
+            addItem.Raise(script);
             Destroy(obj, 0.5f);
         }
         else
         {
             print("inventario cheio");
         }
-        lastThingClicked = null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,47 +9,42 @@ public class ItemData : ScriptableObject
     public string itemName;
     public Sprite icon;
 
-    [SerializeField] private bool doInteraction = false;
-
-    [Header("Can Combine With")]
-    [SerializeField] private bool Book = false;
-    [SerializeField] private bool Book2 = false;
-    [SerializeField] private bool Book3 = false;
-    [SerializeField] private bool Hand = false;
-    [SerializeField] private bool Hand2 = false;
-    [SerializeField] private bool Hand3 = false;
-    [SerializeField] private bool Other = false;
-    [SerializeField] private bool Other2 = false;
-    [SerializeField] private bool Other3 = false;
-    private List<string> canCombineItens = new List<string>();
+    // [SerializeField] private bool doInteraction = false;
+   // [SerializeField] private ItensEnum.Itens itemName;
+    [SerializeField] private ItensEnum.Itens itensToCombineWith;
+    private readonly List<string> canCombineItens = new List<string>();
 
     private void Awake()
     {
-        if (Book) { canCombineItens.Add("Book"); }
-        if (Book2) { canCombineItens.Add("Book2"); }
-        if (Book3) { canCombineItens.Add("Book3"); }
-        if (Hand) { canCombineItens.Add("Hand"); }
-        if (Hand2) { canCombineItens.Add("Hand2"); }
-        if (Hand3) { canCombineItens.Add("Hand3"); }
-        if (Other) { canCombineItens.Add("Other"); }
-        if (Other2) { canCombineItens.Add("Other2"); }
-        if (Other3) { canCombineItens.Add("Other3"); }
+        foreach (var item in GetSelectedFlags(itensToCombineWith))
+        {
+            canCombineItens.Add(item.ToString());
+        }
     }
 
-    public void CheckInteractions(string lastClickedItemName)
+    public List<E> GetSelectedFlags<E>(E flags) where E : Enum
     {
-        foreach (var item in canCombineItens)
+        List<E> selectedFlags = new List<E>();
+        foreach (E value in Enum.GetValues(typeof(E)))
         {
-            if(lastClickedItemName == item)
+            if (flags.HasFlag(value))
             {
-                Debug.Log("HEHE COMBINOU " + lastClickedItemName + "com " + item );
-                //futuramente as interações vao ficar em outro script?
-                doInteraction = true;
-            }
-            else
-            {
-                doInteraction = false;
+                selectedFlags.Add(value);
             }
         }
+        return selectedFlags;
+    }
+
+    public bool CheckInteractions(string lastClickedItemName)
+    {
+        try
+        {
+            var item = (ItensEnum.Itens)Enum.Parse(typeof(ItensEnum.Itens), lastClickedItemName);
+            return itensToCombineWith.HasFlag(item);
+        }
+        catch
+        {
+            return false;
+        }      
     }
 }

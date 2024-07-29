@@ -70,6 +70,7 @@
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData_Scene.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData.cs" />
     <Compile Include="Assets\CODE_GENERATION\Variables\ItemDataVariable.cs" />
+    <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItensEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
