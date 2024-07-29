@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using ScriptableObjectArchitecture;
 
 public class PlayerInteractions : MonoBehaviour
 {  
     public LayerMask groundLayer;
     public LayerMask obstacleLayer;
-    private GameObject lastItemClicked = null;
+    private GameObject lastThingClicked = null;
+    //private bool isUsingItem = false;
     [SerializeField] private Vector2GameEvent walkToDestination;
     [SerializeField] private ItemDataGameEvent addItem;
     [SerializeField] private InventoryManager inventoryManager;
@@ -22,18 +21,18 @@ public class PlayerInteractions : MonoBehaviour
             RaycastHit2D hitGround = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, groundLayer);
             RaycastHit2D hitObs = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, obstacleLayer);
 
-            if (hitObs.collider != null && hitObs.transform.gameObject.CompareTag("Clickable"))
+            if (hitObs.collider != null && hitObs.transform.CompareTag("Clickable"))
             {
                 GameObject clickableArea = hitObs.transform.gameObject;
-                lastItemClicked = clickableArea.transform.parent.gameObject;
-                ItemData_Scene script = lastItemClicked.GetComponent<ItemData_Scene>();              
+                lastThingClicked = clickableArea.transform.parent.gameObject;
+                ItemData_Scene script = lastThingClicked.GetComponent<ItemData_Scene>();
 
                 if (script.isClose)
                 {
-                    AddItem(lastItemClicked);
+                    TryInteraction(lastThingClicked);
                 }
                 else
-                {                    
+                {
                     Collider2D goToCollider = script.interactableArea;
                     Collider2D playerCollider = GetComponentInChildren<Collider2D>();
                     Vector2 playerCenter = playerCollider.bounds.center;
@@ -43,28 +42,34 @@ public class PlayerInteractions : MonoBehaviour
             }
             else if (hitGround.collider != null && hitObs.collider == null)
             {
-                lastItemClicked = null;
+                inventoryManager.CancelInteractionWithItem();
+                lastThingClicked = null;
                 walkToDestination.Raise(hitGround.point);
             }
-            else { lastItemClicked = null; }
+            else { lastThingClicked = null; inventoryManager.CancelInteractionWithItem(); }
         }
     }
 
-    private void AddItem(GameObject obj)
+    private void TryInteraction(GameObject obj)
     {
+        if(inventoryManager.usingItem.Value != null)
+        {
+            ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
+            script.CheckInteractions(inventoryManager.usingItem.Value);
+          //  if(script.)
+        }
         if (inventoryManager.CanAddItem())
         {
             print("pode pegar item");
-            ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
-            addItem.Raise(script);
-            lastItemClicked = null;
-            Destroy(obj);
+            
+            //addItem.Raise(script);       
+            Destroy(obj, 0.5f);
         }
         else
         {
             print("inventario cheio");
-            lastItemClicked = null;          
-        }     
+        }
+        lastThingClicked = null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -73,9 +78,9 @@ public class PlayerInteractions : MonoBehaviour
         {
             collision.GetComponentInParent<ItemData_Scene>().isClose = true;         
 
-            if (lastItemClicked != null && lastItemClicked == collision.transform.parent.gameObject)
+            if (lastThingClicked != null && lastThingClicked == collision.transform.parent.gameObject)
             {
-                AddItem(lastItemClicked);
+                TryInteraction(lastThingClicked);
             }             
         }
     }
@@ -84,7 +89,11 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (collision.CompareTag("InteractableArea"))
         {
-            collision.GetComponentInParent<ItemData_Scene>().isClose = false;
+            Transform parent = collision.transform.parent;
+            if (parent.TryGetComponent(out ItemData_Scene item))
+            {
+                item.isClose = false;
+            }                                  
         }
     }
 }

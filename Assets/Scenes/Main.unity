@@ -731,6 +731,7 @@ MonoBehaviour:
   itens: []
   slotPrefab: {fileID: 7390019804837121747, guid: de2c5facfe3c3e7468f294e8897bc9e1, type: 3}
   parent: {fileID: 1894733430}
+  usingItem: {fileID: 0}
 --- !u!114 &1155286197
 MonoBehaviour:
   m_ObjectHideFlags: 0

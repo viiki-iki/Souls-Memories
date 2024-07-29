@@ -2,20 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ScriptableObjectArchitecture;
 
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private List<ItemData> itens = new List<ItemData>();
-    //[SerializeField] private GameObject panel;
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private GameObject parent;
     private float maxCapacity = 5;
+    public StringVariable usingItem;
 
-    private void Start()
-    {
-       // AddItemUI();
-    }
-    
     public bool CanAddItem()
     {      
         if (itens.Count < maxCapacity)
@@ -36,21 +32,22 @@ public class InventoryManager : MonoBehaviour
         GameObject slot = Instantiate(slotPrefab, parent.transform);        
         slot.transform.Find("Item_Icon").GetComponent<Image>().sprite = item.icon;
         Button button = slot.GetComponent<Button>();
-        button.onClick.AddListener(() => GetItem(item));
-        //item.inventorySlot = slot;
+        button.onClick.AddListener(() => UseItem(item));
     }
 
-    public void GetItem(ItemData item)
+    public void UseItem(ItemData item)
     {
         print("está usando o item " + item.itemName);
         //mudar cursor
-       //testar primeiro como botao
-                                        //depois como arrastar
-       //bool usingItem
-       //botao com sprite invisivel
+        //desligar icon
+        usingItem.Value = item.itemName;
+    }
 
-        //nao tirar ainda do inventario, apenas deixar invisivel pois a açao pode ser cancelada 
-       // e o item pode voltar pro inventario
+    public void CancelInteractionWithItem()
+    {
+        //cursor volta ao normal
+        //icon do item liga
+        usingItem.Value = null;
     }
 
     private void RemoveItem(ItemData item)

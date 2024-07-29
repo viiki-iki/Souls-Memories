@@ -14,4 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Book
   icon: {fileID: 21300000, guid: f3cac9c07068ada46a8666da4ebd9fe5, type: 3}
-  collected: 0
+  doInteraction: 0
+  Book: 0
+  Book2: 0
+  Book3: 0
+  Hand: 0
+  Hand2: 0
+  Hand3: 0
+  Other: 0
+  Other2: 0
+  Other3: 0
