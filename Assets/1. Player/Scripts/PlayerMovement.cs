@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 destination;
     private Vector2 detourPosition;
     private readonly RaycastHit2D[] hitPoints = new RaycastHit2D[64];
+    private Animator animator;
 
     private bool isMoving;
     private bool isDetouring;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         isMoving = false;
         isDetouring = false;
         playerInteractions = GetComponent<PlayerInteractions>();
+        animator = GetComponent<Animator>();
     }
 
     public void CheckObstacles(Vector2 target)
@@ -35,9 +37,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 origin = transform.position;
         Vector2 direction = destination - origin;
         float distance = Vector2.Distance(origin, destination);
-
-        int hits = Physics2D.RaycastNonAlloc(origin, direction, hitPoints, distance, playerInteractions.obstacleLayer);
-        
+        int hits = Physics2D.RaycastNonAlloc(origin, direction, hitPoints, distance, playerInteractions.obstacleLayer);      
         if(hits > 0)
         {
             for (int i = 0; i < hits; i++)
@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         yield break;
     }
 
-    private bool RaycastVerification(Vector2 origin, Vector2 direction, Color color)
+    bool RaycastVerification(Vector2 origin, Vector2 direction, Color color)
     {
         bool pathClear = !Physics2D.Raycast(origin, direction - origin, Vector2.Distance(origin, direction), playerInteractions.obstacleLayer);
         Debug.DrawLine(origin, direction, color, 2f);
@@ -103,12 +103,25 @@ public class PlayerMovement : MonoBehaviour
             return false;              
     }
 
+    void UpdateAnimation()
+    {
+        float distance = Vector2.Distance(transform.position, destination);
+        animator.SetFloat("distance", distance);
+        if(distance > .01)
+        {
+            Vector2 direction = (Vector2)transform.position - destination;
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            animator.SetFloat("angle", angle);
+        }     
+    }
+
     void Update()
     {        
         if (isMoving)
         {
             Vector2 nextPosition = isDetouring ? detourPosition : destination;
-            transform.position = Vector2.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);           
+            transform.position = Vector2.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
+            UpdateAnimation();
 
             if (isDetouring && !Physics2D.Raycast(transform.position, destination - (Vector2)transform.position, Vector2.Distance(transform.position, destination), playerInteractions.obstacleLayer))
             {
