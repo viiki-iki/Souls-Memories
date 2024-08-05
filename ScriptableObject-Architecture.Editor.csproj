@@ -62,29 +62,29 @@
   <ItemGroup>
     <Compile Include="Assets\SO Architecture\Editor\Drawers\BaseReferenceDrawer.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\IPropertyIterator.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Code Generation\SO_CodeGenerator.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Inspectors\BaseGameEventEditor.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\SOArchitecture_EditorUtility.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\IPropertyDrawIterator.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Inspectors\GameEventEditor.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Code Generation\SO_CodeGenerationWindow.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Inspectors\TypedGameEventEditor.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Inspectors\BaseGameEventListenerEditor.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Inspectors\GameEventListenerEditor.cs" />
+    <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\PropertyDrawIterator.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\PropertyDrawIteratorLayout.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Inspectors\SceneVariableEditor.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\BasePropertyDrawIterator.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Drawers\Vector4Drawer.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Drawers\GenericPropertyDrawer.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Code Generation\SO_CodeGenerator.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Inspectors\CollectionEditor.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\PropertyIterator.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Inspectors\BaseGameEventEditor.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Inspectors\BaseVariableEditor.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\SOArchitecture_EditorUtility.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\IPropertyDrawIterator.cs" />
     <Compile Include="Assets\SO Architecture\Editor\BaseReferenceHelper.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Inspectors\GameEventEditor.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Code Generation\SO_CodeGenerationWindow.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Drawers\QuaternionDrawer.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Inspectors\TypesGameEventListenerEditor.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Inspectors\TypedGameEventEditor.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Drawers\SceneInfoPropertyDrawer.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Inspectors\BaseGameEventListenerEditor.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Inspectors\GameEventListenerEditor.cs" />
     <Compile Include="Assets\SO Architecture\Editor\Inspectors\StackTrace.cs" />
-    <Compile Include="Assets\SO Architecture\Editor\Generic Property Drawer\PropertyDrawIterator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SO Architecture\Editor\ScriptableObject-Architecture.Editor.asmdef" />

@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
                     float detourDistance = Mathf.Max(0.3f, Mathf.Min(obsSize.x, obsSize.y) / 2f);
                     Vector2 perpDirection = Vector2.Perpendicular(direction);
 
-                    StartCoroutine(PathOptionsCheck(hitPoints[i].point, perpDirection, detourDistance));
+                    StartCoroutine(CheckPathOptions(hitPoints[i].point, perpDirection, detourDistance));
                     isDetouring = true;
                 }
             }
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         isMoving = true;
     }
 
-    IEnumerator PathOptionsCheck(Vector2 itemPoint, Vector2 perpDirection, float detourDistance)
+    IEnumerator CheckPathOptions(Vector2 itemPoint, Vector2 perpDirection, float detourDistance)
     {
         //verificar os 2 lados do obs
         detourPos1 = itemPoint + perpDirection * detourDistance;
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("alterando");
             isMoving = false;
-            StartCoroutine(PathOptionsCheck(itemPoint, perpDirection, detourDistance + 0.5f));
+            StartCoroutine(CheckPathOptions(itemPoint, perpDirection, detourDistance + 0.5f));
         }
         yield break;
     }
