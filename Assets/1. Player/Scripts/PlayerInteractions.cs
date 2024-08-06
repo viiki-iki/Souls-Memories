@@ -2,6 +2,7 @@ using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Inventory;
 
 public class PlayerInteractions : MonoBehaviour
 {  

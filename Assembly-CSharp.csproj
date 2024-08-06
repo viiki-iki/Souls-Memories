@@ -60,9 +60,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\DialogTreeEnum.cs" />
     <Compile Include="Assets\1. Player\Scripts\PlayerInteractions.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\InventoryManager.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\DialogManager.cs" />
     <Compile Include="Assets\CODE_GENERATION\References\ItemDataReference.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\Option.cs" />
     <Compile Include="Assets\3. Mechanics\Audio\AudioAsset.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData_Scene.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItensEnum.cs" />
@@ -70,9 +73,35 @@
     <Compile Include="Assets\1. Player\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\CODE_GENERATION\Events\Responses\ItemDataUnityEvent.cs" />
     <Compile Include="Assets\3. Mechanics\Audio\AudioManager.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\DialogTree.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\Question.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\DialogTreePrefab.cs" />
     <Compile Include="Assets\CODE_GENERATION\Events\Listeners\ItemDataGameEventListener.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData.cs" />
     <Compile Include="Assets\CODE_GENERATION\Variables\ItemDataVariable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

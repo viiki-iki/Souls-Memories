@@ -2,16 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Inventory;
 
-[CreateAssetMenu(fileName = "ItemData", menuName = "SO/ItemData", order = 1)]
+[CreateAssetMenu(menuName = "SO/ItemData", fileName = "ItemData", order = 1)]
 public class ItemData : ScriptableObject
 {
     public string itemName;
     public Sprite icon;
 
-    // [SerializeField] private bool doInteraction = false;
-   // [SerializeField] private ItensEnum.Itens itemName;
-    [SerializeField] private ItensEnum.Itens itensToCombineWith;
+    [SerializeField] ItensEnum.Itens itensToCombineWith;
     private readonly List<string> canCombineItens = new List<string>();
 
     private void Awake()
@@ -45,6 +44,6 @@ public class ItemData : ScriptableObject
         catch
         {
             return false;
-        }      
+        }
     }
 }
