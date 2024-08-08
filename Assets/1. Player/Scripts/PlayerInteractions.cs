@@ -57,12 +57,12 @@ public class PlayerInteractions : MonoBehaviour
     {
         ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
       
-        if(inventoryManager.usingItem.Value != "")
+        if(inventoryManager.isUsingItem)
         {
-            if (script.CheckInteractions(inventoryManager.usingItem.Value))
+            if (script.CheckInteractions(inventoryManager.usingItem.Value.id))
             {
                 //inventoryManager.CombineItens();
-                print("combinou " + inventoryManager.usingItem.Value + " com " + script.itemName);
+                print("combinou " + inventoryManager.usingItem.Value.id + " com " + script.id);
             }
             else
             {

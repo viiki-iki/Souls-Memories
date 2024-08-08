@@ -7,7 +7,7 @@ using Inventory;
 [CreateAssetMenu(menuName = "SO/ItemData", fileName = "ItemData", order = 1)]
 public class ItemData : ScriptableObject
 {
-    public string itemName;
+    public ItensEnum.Itens id;
     public Sprite icon;
 
     [SerializeField] ItensEnum.Itens itensToCombineWith;
@@ -34,16 +34,18 @@ public class ItemData : ScriptableObject
         return selectedFlags;
     }
 
-    public bool CheckInteractions(string lastClickedItemName)
-    {
-        try
-        {
-            var item = (ItensEnum.Itens)Enum.Parse(typeof(ItensEnum.Itens), lastClickedItemName);
-            return itensToCombineWith.HasFlag(item);
-        }
-        catch
-        {
-            return false;
-        }
-    }
+    public bool CheckInteractions(ItensEnum.Itens lastClickedItem) => itensToCombineWith.HasFlag(lastClickedItem);
+
+   // public bool CheckInteractions(string lastClickedItem)
+   // {
+   //     try
+   //     {
+   //         var item = (ItensEnum.Itens)Enum.Parse(typeof(ItensEnum.Itens), lastClickedItem);
+   //         return itensToCombineWith.HasFlag(item);
+   //     }
+   //     catch
+   //     {
+   //         return false;
+   //     }
+   // }
 }

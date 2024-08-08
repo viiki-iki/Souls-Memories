@@ -7,5 +7,6 @@ namespace DialogSystem
     public class Option
     {
         public string optionText;
+
     }
 }

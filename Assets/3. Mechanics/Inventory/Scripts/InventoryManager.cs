@@ -11,12 +11,14 @@ namespace Inventory
         [SerializeField] private List<ItemData> itens = new List<ItemData>();
         [SerializeField] private GameObject slotPrefab;
         [SerializeField] private GameObject parent;
+        
         private float maxCapacity = 5;
-        public StringVariable usingItem;
+        public bool isUsingItem;
+        public ItemDataVariable usingItem;
 
         private void Start()
         {
-            usingItem.Value = "";
+            isUsingItem = false;
         }
 
         public bool CanAddItem()
@@ -44,18 +46,19 @@ namespace Inventory
 
         public void UseItem(ItemData item)
         {
-            print("está usando o item " + item.itemName);
+            usingItem.Value = item;
+            isUsingItem = true;
+            print("está usando o item " + item.id);
             //mudar cursor
-            //desligar icon
-            usingItem.Value = item.itemName;
+            //desligar icon           
         }
 
         public void CancelInteractionWithItem()
         {
             //cursor volta ao normal
             //icon do item liga
-            usingItem.Value = "";
-            print("cancelou");
+            isUsingItem = false;
+            print("cancelou ação");
         }
 
         public void CombineItens()

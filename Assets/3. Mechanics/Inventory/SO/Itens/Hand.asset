@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6aa3e8fb7a7cc4ab09a730a9d9775b, type: 3}
   m_Name: Hand
   m_EditorClassIdentifier: 
-  itemName: Hand1
+  id: 8
   icon: {fileID: 21300000, guid: dd9e5387b649129409d37d9ce3d25f57, type: 3}
   itensToCombineWith: 39

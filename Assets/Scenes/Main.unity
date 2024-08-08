@@ -564,12 +564,6 @@ MonoBehaviour:
     volume: 0
     pitch: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    hasLoop: 0
-    volume: 0
-    pitch: 0
-    source: {fileID: 0}
 --- !u!1 &574198073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5768,7 +5762,8 @@ MonoBehaviour:
   itens: []
   slotPrefab: {fileID: 7390019804837121747, guid: de2c5facfe3c3e7468f294e8897bc9e1, type: 3}
   parent: {fileID: 1894733430}
-  usingItem: {fileID: 11400000, guid: 726da28994295b643b8722703dc88023, type: 2}
+  isUsingItem: 0
+  usingItem: {fileID: 11400000, guid: f091fa3cddd8bf8449c76284c5ca4b14, type: 2}
 --- !u!114 &1155286197
 MonoBehaviour:
   m_ObjectHideFlags: 0

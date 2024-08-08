@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6aa3e8fb7a7cc4ab09a730a9d9775b, type: 3}
   m_Name: Other
   m_EditorClassIdentifier: 
-  itemName: Other
+  id: 32
   icon: {fileID: 21300000, guid: 8a740f58b63b9dc44a260a8951abeefe, type: 3}
   itensToCombineWith: 24

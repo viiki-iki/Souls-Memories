@@ -5,10 +5,11 @@ using TMPro;
 
 namespace DialogSystem
 {
-    public class DialogTreePrefab : MonoBehaviour
+    public class DialogTreeTemplate : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI questionText;
         [SerializeField] GameObject[] optionButton;
+       // [SerializeField] GameObject nextButton;
 
         public void DisplayQuestion(Question currentQuestion)
         {

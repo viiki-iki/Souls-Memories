@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2474e5d1f7070d64da66908d8dabfce4, type: 3}
-  m_Name: UsingItemVariable
+  m_Script: {fileID: 11500000, guid: 7d10844abef232b42b4c91e9b3fe2e27, type: 3}
+  m_Name: UsingItem
   m_EditorClassIdentifier: 
-  _value: 
+  _value: {fileID: 0}
   _readOnly: 0
   _raiseWarning: 1
   _isClamped: 0
-  _minClampedValue: 
-  _maxClampedValue: 
+  _minClampedValue: {fileID: 0}
+  _maxClampedValue: {fileID: 0}
   _event:
     m_PersistentCalls:
       m_Calls: []

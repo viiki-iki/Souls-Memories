@@ -66,6 +66,7 @@
     <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\DialogManager.cs" />
     <Compile Include="Assets\CODE_GENERATION\References\ItemDataReference.cs" />
     <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\Option.cs" />
+    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\DialogTreeTemplate.cs" />
     <Compile Include="Assets\3. Mechanics\Audio\AudioAsset.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData_Scene.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItensEnum.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\3. Mechanics\Audio\AudioManager.cs" />
     <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\DialogTree.cs" />
     <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\Others\Question.cs" />
-    <Compile Include="Assets\3. Mechanics\DialogSystem\Scripts\DialogTreePrefab.cs" />
     <Compile Include="Assets\CODE_GENERATION\Events\Listeners\ItemDataGameEventListener.cs" />
     <Compile Include="Assets\3. Mechanics\Inventory\Scripts\ItemData.cs" />
     <Compile Include="Assets\CODE_GENERATION\Variables\ItemDataVariable.cs" />
