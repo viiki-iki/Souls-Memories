@@ -10,10 +10,14 @@ public class PlayerInteractions : MonoBehaviour
     public LayerMask obstacleLayer;
 
     private GameObject lastThingClicked = null;
-    //private bool isUsingItem = false;
+    private bool isUsingItem = false;
+    private ItensEnum.Itens itens;
+
+    [Header ("SO")]
     [SerializeField] private Vector2GameEvent walkToDestination;
     [SerializeField] private ItemDataGameEvent addItem;
-    [SerializeField] private InventoryManager inventoryManager;
+    [SerializeField] private GameEvent cancelInteractions;
+    [SerializeField] private BoolVariable canAddItem;
 
     public void OnClick(InputAction.CallbackContext ctx)
     {
@@ -25,96 +29,99 @@ public class PlayerInteractions : MonoBehaviour
             RaycastHit2D hitObs = Physics2D.Raycast(worldPosition, Vector2.zero, Mathf.Infinity, obstacleLayer);
 
             if (hitObs.collider != null && hitObs.transform.CompareTag("Clickable"))
-            {
-                GameObject clickableArea = hitObs.transform.gameObject;
-                lastThingClicked = clickableArea.transform.parent.gameObject;
-                ItemData_Scene script = lastThingClicked.GetComponent<ItemData_Scene>();
-
-                if (script.isClose)
-                {
-                    TryInteraction(lastThingClicked);
-                }
-                else
-                {
-                    Collider2D goToCollider = script.interactableArea;
-                    Collider2D playerCollider = GetComponentInChildren<Collider2D>();
-                    Vector2 playerCenter = playerCollider.bounds.center;
-                    Vector2 point = goToCollider.ClosestPoint(playerCenter);
-                    walkToDestination.Raise(point);
-                }
-            }
+                OnClickItem(hitObs);
             else if (hitGround.collider != null && hitObs.collider == null)
             {
-                inventoryManager.CancelInteractionWithItem();
-                lastThingClicked = null;
+                ResetInteractions();
                 walkToDestination.Raise(hitGround.point);
             }
-            else { lastThingClicked = null; inventoryManager.CancelInteractionWithItem(); }
+            else ResetInteractions();
         }
     }
 
-    private void TryInteraction(GameObject obj)
+    public void UsingItem(ItemData item)
     {
-        ItemData script = obj.GetComponent<ItemData_Scene>().ItemData;
-      
-        if(inventoryManager.isUsingItem)
-        {
-            if (script.CheckInteractions(inventoryManager.usingItem.Value.id))
-            {
-                //inventoryManager.CombineItens();
-                print("combinou " + inventoryManager.usingItem.Value.id + " com " + script.id);
-            }
-            else
-            {
-                print("n pode combinar");
-                inventoryManager.CancelInteractionWithItem();
-            }
-        }
-        else
-        {
-            TryAdd(obj, script);
-        }
+        isUsingItem = true;
+        itens = item.id;
+    }
 
+    void ResetInteractions()
+    {
+        isUsingItem = false;
+        cancelInteractions.Raise();
         lastThingClicked = null;
     }
 
-    private void TryAdd(GameObject obj, ItemData script)
+    void OnClickItem(RaycastHit2D hit)
     {
-        if (inventoryManager.CanAddItem())
-        {
-            print("pode pegar item");
+        GameObject clickableArea = hit.transform.gameObject;
+        lastThingClicked = clickableArea.transform.parent.gameObject;
+        ItemData_Scene itemScene = lastThingClicked.GetComponent<ItemData_Scene>();
 
+        if (itemScene.isClose)
+            TryInteraction(lastThingClicked, itemScene.ItemData);
+        else
+            GoToItem(itemScene);
+    }
+
+    void GoToItem(ItemData_Scene script)
+    {
+        Collider2D goToCollider = script.interactableArea;
+        Collider2D playerCollider = GetComponentInChildren<Collider2D>();
+        Vector2 playerCenter = playerCollider.bounds.center;
+        Vector2 point = goToCollider.ClosestPoint(playerCenter);
+        walkToDestination.Raise(point);
+    }
+
+    void TryInteraction(GameObject obj, ItemData script)
+    {      
+        if(isUsingItem)
+        {
+            if (script.CheckInteractions(itens))
+            {
+                //inventoryManager.CombineItens();
+                print("combinou " + itens + " com " + script.id);
+            }
+            else
+            {
+                print("n pode combinar");                
+            }
+        }
+        else
+            TryAdd(obj, script);
+
+        ResetInteractions();
+    }
+
+    void TryAdd(GameObject obj, ItemData script)
+    {
+        if (canAddItem.Value)
+        {
             addItem.Raise(script);
             Destroy(obj, 0.5f);
         }
         else
-        {
             print("inventario cheio");
-        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("InteractableArea"))
         {
-            collision.GetComponentInParent<ItemData_Scene>().isClose = true;         
+            ItemData_Scene itemScene = collision.GetComponentInParent<ItemData_Scene>();
+            itemScene.isClose = true;         
 
             if (lastThingClicked != null && lastThingClicked == collision.transform.parent.gameObject)
-            {
-                TryInteraction(lastThingClicked);
-            }             
+                TryInteraction(lastThingClicked, itemScene.ItemData);            
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("InteractableArea"))
         {
-            Transform parent = collision.transform.parent;
-            if (parent.TryGetComponent(out ItemData_Scene item))
-            {
-                item.isClose = false;
-            }                                  
+            if (collision.transform.parent.TryGetComponent(out ItemData_Scene item))
+                item.isClose = false;                                  
         }
     }
 }

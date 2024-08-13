@@ -11,32 +11,28 @@ namespace Inventory
         [SerializeField] private List<ItemData> itens = new List<ItemData>();
         [SerializeField] private GameObject slotPrefab;
         [SerializeField] private GameObject parent;
-        
+
+        [Header ("SO")]
+        [SerializeField] private BoolVariable canAddItem;
+        [SerializeField] private ItemDataGameEvent usingItem;
+
         private float maxCapacity = 5;
-        public bool isUsingItem;
-        public ItemDataVariable usingItem;
-
-        private void Start()
+        
+        void Start()
         {
-            isUsingItem = false;
+            UpdateCanAddItem();
         }
 
-        public bool CanAddItem()
-        {
-            if (itens.Count < maxCapacity)
-                return true;
-            else
-                return false;
-        }
+        void UpdateCanAddItem() => canAddItem.Value = itens.Count < maxCapacity;
 
         public void AddItem(ItemData item)
         {
             itens.Add(item);
             AddItemUI(item);
-            print("adicionou item " + item.name);
+            UpdateCanAddItem();
         }
 
-        private void AddItemUI(ItemData item)
+        void AddItemUI(ItemData item)
         {
             GameObject slot = Instantiate(slotPrefab, parent.transform);
             slot.transform.Find("Item_Icon").GetComponent<Image>().sprite = item.icon;
@@ -44,30 +40,30 @@ namespace Inventory
             button.onClick.AddListener(() => UseItem(item));
         }
 
-        public void UseItem(ItemData item)
+        void UseItem(ItemData item)
         {
-            usingItem.Value = item;
-            isUsingItem = true;
-            print("está usando o item " + item.id);
+            usingItem.Raise(item);
             //mudar cursor
             //desligar icon           
+            print("está usando o item " + item.id);
         }
 
         public void CancelInteractionWithItem()
         {
             //cursor volta ao normal
             //icon do item liga
-            isUsingItem = false;
             print("cancelou ação");
         }
 
-        public void CombineItens()
+        void CombineItens()
         {
         }
 
-        private void RemoveItem(ItemData item)
+        void RemoveItem(ItemData item)
         {
             itens.Remove(item);
+            //ui slot destroy
+            UpdateCanAddItem();
         }
     }
 }

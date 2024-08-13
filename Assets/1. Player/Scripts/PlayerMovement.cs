@@ -23,12 +23,16 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float speed;
 
-    private void Start()
+    void Awake()
+    {       
+        playerInteractions = GetComponent<PlayerInteractions>();
+        animator = GetComponent<Animator>();
+    }
+
+    void Start()
     {
         isMoving = false;
         isDetouring = false;
-        playerInteractions = GetComponent<PlayerInteractions>();
-        animator = GetComponent<Animator>();
     }
 
     public void CheckObstacles(Vector2 target)

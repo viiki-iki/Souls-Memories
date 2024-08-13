@@ -82,6 +82,8 @@ GameObject:
   - component: {fileID: 6204209529841503275}
   - component: {fileID: 5228677281254684389}
   - component: {fileID: 8419496100866089028}
+  - component: {fileID: 7717288763474708932}
+  - component: {fileID: 29416861470326849}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -148,7 +150,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dc8e39df40fb2ce41927e49bdce896dc, type: 3}
   m_Color: {r: 0.8769273, g: 0.5235849, b: 1, a: 0.87058824}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.28, y: 0.41}
@@ -263,7 +265,8 @@ MonoBehaviour:
     m_Bits: 64
   walkToDestination: {fileID: 11400000, guid: 7fe72952507045946960fb47c395dae4, type: 2}
   addItem: {fileID: 11400000, guid: dedf7ad476efe0645bc49b5eecbb096f, type: 2}
-  inventoryManager: {fileID: 0}
+  cancelInteractions: {fileID: 11400000, guid: acaed2adeb61c0a459e2979d009bc108, type: 2}
+  canAddItem: {fileID: 11400000, guid: c6fa0619718148944aa3242267c8f411, type: 2}
 --- !u!114 &8419496100866089028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +300,57 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _debugValue: {x: 0, y: 0}
+--- !u!95 &7717288763474708932
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339592776524901887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc27fe7f215597a46be21f579905a7ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &29416861470326849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7339592776524901887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826c7257ce3711048a94c4808705b1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 55fc06fcb8aede649908ef0561fc74e0, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5228677281254684389}
+        m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
+        m_MethodName: UsingItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: {fileID: 0}
